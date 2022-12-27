@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@300&family=Open+Sans&family=Russo+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  height: 100vh;
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  font-family: 'bangers';
+  font-size: 2rem;
+  color: dodgerblue;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 1px;
+}
+.span {
+  letter-spacing: 3px;
+  margin-left: 5px;
+}
+
+.slide {
+  max-height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  user-select: none;
+}
+
+.slide img {
+  max-width: 80%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.images {
+    width: 150px;
+    height: 240px;
+}
+
+.buttons {
+    width: 160px;
+    height: 120px;
+    margin: 10px;
+    border-style: none;
+    border-radius: 10px;
+    font-family: 'bangers';
+    color:dodgerblue;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 10px #00000070;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.buttons:hover {
+  transform: scale(1.05);
+  color: rgb(0, 183, 255);
+}
+
+.next {
+    margin-left: 250px;
+    width: 100px;
+    visibility: hidden;
+}
+
+.back {
+  margin-right: 250px;
+  width: 100px;
+  visibility: hidden;
+}
+
+.slide h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.slide h4 {
+  font-size: 1.3rem;
+}
+
+.btn {
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide img {
+  transform: scale(0.9);
+}
+
+.swipe {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
+  border-radius: 40px;
+  visibility: hidden;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+
+
+
